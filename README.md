@@ -14,22 +14,23 @@ This is a sample application for LINE iOS SDK V2. It demonstrates the following 
 
 # Before Starting
 
-* You must have XCode installed.
+* You must have Xcode installed.
 * You must create a LINE Login account on the [LINE Business Center](https://business.line.me) that has the application type set to `NATIVE_APP`. You will need the account's Channel ID to set up the SDK.
 
 # Setup
 
-1. Download LINE SDK V2 for iOS from the LINE Developer Console and put the framework in the `LINE_iOS_SDK_V2_Starter/Frameworks` folder.
-2. Set the LineSDKConfig/ChannelID element in the project's `Info.plist` to your channel's Channel ID and then build the application using XCode.
+1. Download LINE SDK V2 for iOS from the Channel Console and put the framework in the `LINE_iOS_SDK_V2_Starter/Frameworks` folder.
+2. Set the iOS bundle ID and iOS scheme in the technical configuration section of the Channel Console.
+3. Set the LineSDKConfig/ChannelID element in the project's `Info.plist` to your channel's Channel ID and then build the application using Xcode.
 
 # How to Use
 
 <kbd><img src="app_screenshot.png"></kbd>
 
-The **A2A Login** button will use the LINE App to log in and the **Web Login** button will open a Web Login screen inside of a Safari Web View and prompt
+The **A2A Login** button will use the LINE app to log in and the **Web Login** button will open a Web Login screen inside of a Safari Web View and prompt
 the user to log in using their LINE account's email and password.
 
-After logging in, the user's profile information and access token will be displayed on the screen in addition four buttons:
+After logging in, the user's profile information and access token will be displayed on the screen in addition to four buttons:
 
 * **Get Profile** - Pushing this button will call the LINE SDK's `getProfileWithCompletion` method. The profile information retrieved from the API will appear in a different view.
 This information should be the same as the profile information that is initially displayed to the user after they log into this starter application.
@@ -39,7 +40,7 @@ This information should be the same as the profile information that is initially
 
 # Documentation
 
-For detailed documentation, please refer to these links:
+For detailed documentation, please refer to the following links:
 
-* [LINE Developer Center's iOS SDK Documentation](https://developers.line.me/ios/overview)
-* [LINE SDK for iOS API Reference](https://devdocs.line.me/en/#line-sdk-for-ios-api-reference)
+* [iOS SDK documentation](https://developers.line.me/ios/overview)
+* [LINE SDK for iOS API reference](https://devdocs.line.me/en/#line-sdk-for-ios-api-reference)
