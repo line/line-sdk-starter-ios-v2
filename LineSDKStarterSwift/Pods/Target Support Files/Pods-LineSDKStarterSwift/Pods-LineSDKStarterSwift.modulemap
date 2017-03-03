@@ -1,0 +1,6 @@
+framework module Pods_LineSDKStarterSwift {
+  umbrella header "Pods-LineSDKStarterSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

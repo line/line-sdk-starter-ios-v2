@@ -1,0 +1,12 @@
+PODS:
+  - LineSDK (4.0.2)
+
+DEPENDENCIES:
+  - LineSDK (~> 4.0.2)
+
+SPEC CHECKSUMS:
+  LineSDK: c738ac9451ca35abd152dceacd8c92cdde658e43
+
+PODFILE CHECKSUM: f5eba1f01c9cd72f13cc2b5d8043d1f4bd5b62a4
+
+COCOAPODS: 1.2.0

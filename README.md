@@ -1,3 +1,5 @@
+![](https://travis-ci.org/line/line-sdk-starter-ios-v2.svg?branch=master)
+
 # line-ios-v2-starter
 LINE iOS SDK V2 starter
 
