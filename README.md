@@ -12,6 +12,8 @@ This is a sample application for LINE iOS SDK V2. It demonstrates the following 
 * Refresh Token API
 * Logout API
 
+It includes a sample in Objective-C and a sample in Swift.
+
 # Before Starting
 
 * You must have Xcode installed.
@@ -19,7 +21,7 @@ This is a sample application for LINE iOS SDK V2. It demonstrates the following 
 
 # Setup
 
-1. Download LINE SDK V2 for iOS from the Channel Console and put the framework in the `LINE_iOS_SDK_V2_Starter/Frameworks` folder.
+1. Download LINE SDK V2 for iOS from the Channel Console and put the framework in the `Frameworks` folder.
 2. Set the iOS bundle ID and iOS scheme in the technical configuration section of the Channel Console.
 3. Set the LineSDKConfig/ChannelID element in the project's `Info.plist` to your channel's Channel ID and then build the application using Xcode.
 
