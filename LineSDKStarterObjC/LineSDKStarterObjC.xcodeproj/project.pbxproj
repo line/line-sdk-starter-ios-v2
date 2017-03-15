@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4408AC351DFE8C9F00741681 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4408AC341DFE8C9F00741681 /* ProfileViewController.m */; };
-		44206EAB1E07BF03009B942D /* LineSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44206EAA1E07BF03009B942D /* LineSDK.framework */; };
 		444D00041DFFCD9E00A8EFD7 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D00021DFFCD9E00A8EFD7 /* UserInfoViewController.m */; };
 		44914CFF1DF94F8D008A3FBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44914CFE1DF94F8D008A3FBA /* main.m */; };
 		44914D021DF94F8D008A3FBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44914D011DF94F8D008A3FBA /* AppDelegate.m */; };
@@ -46,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44206EAB1E07BF03009B942D /* LineSDK.framework in Frameworks */,
 				44914D1A1DF95175008A3FBA /* CoreTelephony.framework in Frameworks */,
 				44914D181DF9516F008A3FBA /* Security.framework in Frameworks */,
 			);
@@ -317,10 +315,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y59PKQ5873;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/LineSDKStarterObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
@@ -336,10 +331,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = Y59PKQ5873;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/../Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/LineSDKStarterObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
