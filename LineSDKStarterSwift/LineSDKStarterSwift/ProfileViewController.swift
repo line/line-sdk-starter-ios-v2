@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LineSDK
 
 class ProfileViewController: UIViewController {
     

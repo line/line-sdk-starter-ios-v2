@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import LineSDK
+
 
 class UserInfoViewController: UIViewController, UIPopoverPresentationControllerDelegate {
     

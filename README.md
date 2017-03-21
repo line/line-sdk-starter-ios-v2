@@ -17,11 +17,12 @@ It includes a sample in Objective-C and a sample in Swift.
 # Before Starting
 
 * You must have Xcode installed.
+* You must have [Cocoapods](https://cocoapods.org/) installed.
 * You must create a LINE Login account on the [LINE Business Center](https://business.line.me) that has the application type set to `NATIVE_APP`. You will need the account's Channel ID to set up the SDK.
 
 # Setup
 
-1. Download LINE SDK V2 for iOS from the Channel Console and put the framework in the `Frameworks` folder.
+1. Run `pod install` from the `LineSDKStarterObjC` folder if you want to use the Objective-C sample or from the `LineSDKStarterSwift` folder if you want to use the Swift sample.
 2. Set the iOS bundle ID and iOS scheme in the technical configuration section of the Channel Console.
 3. Set the LineSDKConfig/ChannelID element in the project's `Info.plist` to your channel's Channel ID and then build the application using Xcode.
 

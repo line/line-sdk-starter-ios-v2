@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LineSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
