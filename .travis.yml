@@ -1,0 +1,17 @@
+language: objective-c
+env:
+    - PROJECTNAME=LineSDKStarterObjC
+    - PROJECTNAME=LineSDKStarterSwift
+rvm:
+    - 2.2.5
+before_install:
+    - sudo gem install cocoapods -v '1.2.0'
+    - cd LineSDKStarterObjC
+    - pod update
+    - cd ..
+    - cd LineSDKStarterSwift
+    - pod update
+    - cd ..
+osx_image: xcode8.1
+script: "xcodebuild -workspace $PROJECTNAME/$PROJECTNAME.xcworkspace -scheme $PROJECTNAME -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO"
+podfile: $PROJECTNAME/Podfile

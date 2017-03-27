@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044A815C8542E0C613CD0185 /* Pods_LineSDKStarterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80BD810EA4E7D2A2BDBE0C71 /* Pods_LineSDKStarterSwift.framework */; };
 		449069DA1E641EC600CE8B12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449069D91E641EC600CE8B12 /* AppDelegate.swift */; };
 		449069DC1E641EC600CE8B12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449069DB1E641EC600CE8B12 /* ViewController.swift */; };
 		449069DF1E641EC600CE8B12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 449069DD1E641EC600CE8B12 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20CDCAF2629D2A7C79B14EED /* Pods-LineSDKStarterSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineSDKStarterSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineSDKStarterSwift/Pods-LineSDKStarterSwift.release.xcconfig"; sourceTree = "<group>"; };
 		449069D61E641EC600CE8B12 /* LineSDKStarterSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineSDKStarterSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		449069D91E641EC600CE8B12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		449069DB1E641EC600CE8B12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		449069EC1E641F6B00CE8B12 /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LineSDK.framework; path = LineSDKStarterSwift/Frameworks/LineSDK.framework; sourceTree = "<group>"; };
 		449069F11E669AB800CE8B12 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		449069F31E66C05100CE8B12 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		58B9F77D4975D32682A9C397 /* Pods-LineSDKStarterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineSDKStarterSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineSDKStarterSwift/Pods-LineSDKStarterSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		80BD810EA4E7D2A2BDBE0C71 /* Pods_LineSDKStarterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineSDKStarterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				449069ED1E641F6B00CE8B12 /* LineSDK.framework in Frameworks */,
+				044A815C8542E0C613CD0185 /* Pods_LineSDKStarterSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,7 @@
 				449069D81E641EC600CE8B12 /* LineSDKStarterSwift */,
 				449069D71E641EC600CE8B12 /* Products */,
 				449069EB1E641F6B00CE8B12 /* Frameworks */,
+				4A8B580A01FDBC9B3CEEF64D /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +84,18 @@
 			isa = PBXGroup;
 			children = (
 				449069EC1E641F6B00CE8B12 /* LineSDK.framework */,
+				80BD810EA4E7D2A2BDBE0C71 /* Pods_LineSDKStarterSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A8B580A01FDBC9B3CEEF64D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58B9F77D4975D32682A9C397 /* Pods-LineSDKStarterSwift.debug.xcconfig */,
+				20CDCAF2629D2A7C79B14EED /* Pods-LineSDKStarterSwift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 449069E81E641EC600CE8B12 /* Build configuration list for PBXNativeTarget "LineSDKStarterSwift" */;
 			buildPhases = (
+				BBFB61A0A5612CF2C1839EB9 /* [CP] Check Pods Manifest.lock */,
 				449069D21E641EC600CE8B12 /* Sources */,
 				449069D31E641EC600CE8B12 /* Frameworks */,
 				449069D41E641EC600CE8B12 /* Resources */,
+				EFB76FF4252A841372FF34B6 /* [CP] Embed Pods Frameworks */,
+				6182B0BA5D52C0FAB34F7F21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +168,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6182B0BA5D52C0FAB34F7F21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LineSDKStarterSwift/Pods-LineSDKStarterSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFB61A0A5612CF2C1839EB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB76FF4252A841372FF34B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LineSDKStarterSwift/Pods-LineSDKStarterSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		449069D21E641EC600CE8B12 /* Sources */ = {
@@ -279,6 +346,7 @@
 		};
 		449069E91E641EC600CE8B12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B9F77D4975D32682A9C397 /* Pods-LineSDKStarterSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y59PKQ5873;
@@ -295,6 +363,7 @@
 		};
 		449069EA1E641EC600CE8B12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20CDCAF2629D2A7C79B14EED /* Pods-LineSDKStarterSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y59PKQ5873;
