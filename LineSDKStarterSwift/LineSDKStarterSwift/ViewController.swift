@@ -51,8 +51,8 @@ class ViewController: UIViewController, LineSDKLoginDelegate {
         print("Access Token: \(accessToken.accessToken)")
         print("User ID: \(profile.userID)")
         print("Display Name: \(profile.displayName)")
-        print("Picture URL: \(profile.pictureURL)")
-        print("Status Message: \(profile.statusMessage)")
+        print("Picture URL: \(profile.pictureURL as URL?)")
+        print("Status Message: \(profile.statusMessage as String?)")
         
         if let userInfoVC = self.storyboard?.instantiateViewController(withIdentifier: "userInfoViewController") as? UserInfoViewController {
             var data = ["userid" : profile.userID,
