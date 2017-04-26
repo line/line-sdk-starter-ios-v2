@@ -41,7 +41,7 @@
 	<key>LineSDKConfig</key>
 	<dict>
 		<key>ChannelID</key>
-		<string>1487404401</string>
+		<string>{CHANNEL ID}</string>
 	</dict>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
