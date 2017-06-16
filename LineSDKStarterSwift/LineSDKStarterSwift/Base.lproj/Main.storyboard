@@ -65,7 +65,7 @@
         <!--userInfoViewController-->
         <scene sceneID="GP8-v3-Vgc">
             <objects>
-                <viewController storyboardIdentifier="userInfoViewController" title="userInfoViewController" id="yov-q0-1tR" customClass="UserInfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="userInfoViewController" title="userInfoViewController" id="yov-q0-1tR" customClass="UserInfoViewController" customModule="LineSDKStarterSwift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tVI-JO-zIt"/>
                         <viewControllerLayoutGuide type="bottom" id="tem-Ga-p7z"/>
@@ -141,7 +141,7 @@
                                         </constraints>
                                         <state key="normal" title="Get Profile"/>
                                         <connections>
-                                            <action selector="pressGetProfile:" destination="yov-q0-1tR" eventType="touchUpInside" id="5Jy-Ou-6FX"/>
+                                            <action selector="pressGetProfileWith:" destination="yov-q0-1tR" eventType="touchUpInside" id="lxg-Mt-zVd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oS-LR-CXB">
@@ -151,7 +151,7 @@
                                         </constraints>
                                         <state key="normal" title="Verify Token"/>
                                         <connections>
-                                            <action selector="pressVerifyToken:" destination="yov-q0-1tR" eventType="touchUpInside" id="V4e-QK-KO0"/>
+                                            <action selector="pressVerifyTokenWith:" destination="yov-q0-1tR" eventType="touchUpInside" id="JNe-Pq-gA8"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfh-md-gIc">
@@ -161,7 +161,7 @@
                                         </constraints>
                                         <state key="normal" title="Refresh Token"/>
                                         <connections>
-                                            <action selector="pressRefreshToken:" destination="yov-q0-1tR" eventType="touchUpInside" id="QWH-mo-sAW"/>
+                                            <action selector="pressRefreshTokenWith:" destination="yov-q0-1tR" eventType="touchUpInside" id="rI4-Td-kFH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aX4-R9-qIf">
@@ -171,7 +171,7 @@
                                         </constraints>
                                         <state key="normal" title="Logout"/>
                                         <connections>
-                                            <action selector="pressLogout:" destination="yov-q0-1tR" eventType="touchUpInside" id="Ou1-Me-tHr"/>
+                                            <action selector="pressLogoutWith:" destination="yov-q0-1tR" eventType="touchUpInside" id="80V-xf-iOD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -189,12 +189,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="accessTokenLabel" destination="V8r-rZ-hTu" id="oYe-Ot-eX8"/>
-                        <outlet property="displayNameLabel" destination="ywl-8C-quE" id="uhq-gP-Mwy"/>
-                        <outlet property="profileButton" destination="mLf-Q0-9bs" id="2Em-xF-Ui2"/>
-                        <outlet property="profileImageView" destination="9CX-e1-fT1" id="tid-1e-tDe"/>
-                        <outlet property="statusMessageLabel" destination="pn9-Jl-3Gk" id="3Jg-uV-7yA"/>
-                        <outlet property="userIdLabel" destination="w76-FA-5lV" id="LLw-c1-ggr"/>
+                        <outlet property="accessTokenLabel" destination="V8r-rZ-hTu" id="txZ-uv-mye"/>
+                        <outlet property="displayNameLabel" destination="ywl-8C-quE" id="TYd-Vo-dLQ"/>
+                        <outlet property="profileImageView" destination="9CX-e1-fT1" id="zcF-oA-VdP"/>
+                        <outlet property="statusMessageLabel" destination="pn9-Jl-3Gk" id="zS2-D9-KXG"/>
+                        <outlet property="userIdLabel" destination="w76-FA-5lV" id="Fpa-EB-Fiz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jic-qF-4yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -204,7 +203,7 @@
         <!--Profile View Controller-->
         <scene sceneID="qF4-GQ-oro">
             <objects>
-                <viewController storyboardIdentifier="profileViewController" id="fga-lp-fZJ" customClass="ProfileViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileViewController" id="fga-lp-fZJ" customClass="ProfileViewController" customModule="LineSDKStarterSwift" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oy8-em-CBw"/>
                         <viewControllerLayoutGuide type="bottom" id="1zb-nH-z4r"/>
@@ -274,7 +273,7 @@
                                         <rect key="frame" x="0.0" y="281.5" width="300" height="256.5"/>
                                         <state key="normal" title="OK"/>
                                         <connections>
-                                            <action selector="pressOK:" destination="fga-lp-fZJ" eventType="touchUpInside" id="s3F-dM-bnW"/>
+                                            <action selector="pressOKWith:" destination="fga-lp-fZJ" eventType="touchUpInside" id="oSW-9N-vku"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -289,10 +288,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="profileDisplayName" destination="BvP-EN-nT2" id="jca-De-RcY"/>
-                        <outlet property="profilePicture" destination="Hp6-FB-luu" id="8Fb-bV-PrX"/>
-                        <outlet property="profileStatusMessage" destination="e9l-5L-UOu" id="2f1-RB-m3j"/>
-                        <outlet property="profileUserID" destination="C0W-Q7-CH1" id="JfS-H4-iXe"/>
+                        <outlet property="profileDisplayName" destination="BvP-EN-nT2" id="18r-4Q-6IT"/>
+                        <outlet property="profilePicture" destination="Hp6-FB-luu" id="bAN-Vv-J6Q"/>
+                        <outlet property="profileStatusMessage" destination="e9l-5L-UOu" id="Aaa-Kw-Ieu"/>
+                        <outlet property="profileUserID" destination="C0W-Q7-CH1" id="1rk-nH-Qy7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4M4-PY-ork" userLabel="First Responder" sceneMemberID="firstResponder"/>
