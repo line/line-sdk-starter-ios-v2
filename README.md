@@ -32,7 +32,7 @@ It includes a sample in Objective-C and a sample in Swift.
 
 <kbd><img src="app_screenshot.png"></kbd>
 
-The **A2A Login** button will use the LINE app to log in and the **Web Login** button will open a Web Login screen inside of a Safari Web View and prompt
+The **Login with LINE** button will use the LINE app to log in and the **Browser Login** button will open a Web Login screen inside of a Safari Web View and prompt
 the user to log in using their LINE account's email and password.
 
 After logging in, the user's profile information and access token will be displayed on the screen in addition to four buttons:
