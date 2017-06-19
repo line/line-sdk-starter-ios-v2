@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,19 +21,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="26W-bg-ofg">
-                                <rect key="frame" x="124" y="204" width="73" height="160"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="154" placeholderIntrinsicHeight="174" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="26W-bg-ofg">
+                                <rect key="frame" x="25.5" y="190" width="270" height="188"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdB-p0-sTK">
-                                        <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
-                                        <state key="normal" title="A2A Login"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdB-p0-sTK">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="44"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Login with LINE" backgroundImage="btn_login_base">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="btn_login_press"/>
+                                        <state key="highlighted" backgroundImage="btn_login_press"/>
                                         <connections>
                                             <action selector="A2ALogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJB-i1-HNt"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-ky-xZ8">
-                                        <rect key="frame" x="0.0" y="130" width="73" height="30"/>
-                                        <state key="normal" title="Web Login"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-ky-xZ8">
+                                        <rect key="frame" x="0.0" y="144" width="270" height="44"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="150" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="titleEdgeInsets" minX="-130" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Browser Login" backgroundImage="btn_login_base"/>
+                                        <state key="selected" backgroundImage="btn_login_press"/>
+                                        <state key="highlighted" backgroundImage="btn_login_press"/>
                                         <connections>
                                             <action selector="WebLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="bMG-ff-603"/>
                                         </connections>
@@ -289,4 +300,8 @@
             <point key="canvasLocation" x="1068" y="785.75712143928047"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_login_base" width="52" height="44"/>
+        <image name="btn_login_press" width="52" height="44"/>
+    </resources>
 </document>
