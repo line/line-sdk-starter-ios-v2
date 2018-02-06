@@ -6,5 +6,5 @@ target 'LineSDKStarterSwift' do
   use_frameworks!
 
   # Pods for LineSDKStarterSwift
-  pod 'LineSDK', '~> 4.0.2'
+  pod 'LineSDK', '~> 4.1.0'
 end

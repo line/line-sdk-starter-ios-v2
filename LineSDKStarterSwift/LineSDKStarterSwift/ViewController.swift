@@ -30,7 +30,7 @@ class ViewController: UIViewController, LineSDKLoginDelegate {
     
     @IBAction func WebLogin (with sender: UIButton) {
         
-        LineSDKLogin.sharedInstance().startWebLogin(withSafariViewController: true)
+        LineSDKLogin.sharedInstance().startWebLogin()
     }
     
     // MARK: LineSDKLoginDelegate

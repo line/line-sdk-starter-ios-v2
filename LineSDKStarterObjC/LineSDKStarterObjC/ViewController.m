@@ -39,7 +39,7 @@
 
 - (IBAction)WebLogin
 {
-    [[LineSDKLogin sharedInstance] startWebLoginWithSafariViewController:YES];
+    [[LineSDKLogin sharedInstance] startWebLogin];
 }
 
 
