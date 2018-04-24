@@ -134,7 +134,7 @@ class UserInfoViewController: UIViewController, UIPopoverPresentationControllerD
             
             if success {
                 print("Logout Succeeded")
-                self.displayAlertDialog(with: "Login Successful", and: "You have successfully logged out.", dismiss: true)
+                self.displayAlertDialog(with: "Logout Successful", and: "You have successfully logged out.", dismiss: true)
             }
             else {
                 print("Logout Failed \(error?.localizedDescription as String?)")
