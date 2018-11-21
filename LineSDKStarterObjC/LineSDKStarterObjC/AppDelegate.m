@@ -60,5 +60,12 @@
     return [[LineSDKLogin sharedInstance] handleOpenURL:url];
 }
 
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler
+{
+    if ([[LineSDKLogin sharedInstance] handleOpenURL:userActivity.webpageURL]) {
+        return YES;
+    }    
+    return NO;
+}
 
 @end

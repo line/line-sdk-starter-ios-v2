@@ -34,12 +34,12 @@
 
 - (IBAction)A2ALogin
 {
-    [[LineSDKLogin sharedInstance] startLogin];
+    [[LineSDKLogin sharedInstance] startLoginWithPermissions:@[@"profile", @"openid"]];
 }
 
 - (IBAction)WebLogin
 {
-    [[LineSDKLogin sharedInstance] startWebLogin];
+    [[LineSDKLogin sharedInstance] startWebLoginWithPermissions:@[@"profile", @"openid"]];
 }
 
 
@@ -56,30 +56,40 @@
     }
     
     NSLog(@"LINE Login Succeeded");
-    NSLog(@"Access Token: %@", credential.accessToken.accessToken);
-    NSLog(@"User ID: %@", profile.userID);
-    NSLog(@"Display Name: %@", profile.displayName);
-    NSLog(@"Picture URL: %@", profile.pictureURL);
-    NSLog(@"Status Message: %@", profile.statusMessage);
     
     UserInfoViewController *userInfoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"userInfoViewController"];
     
-    NSMutableDictionary *data = [@{
+    NSMutableDictionary *profileData = [@{
                                    @"userid" : profile.userID,
                                    @"displayname" : profile.displayName,
                                    @"accesstoken" : credential.accessToken.accessToken
                                    } mutableCopy];
     
     if(profile.pictureURL != nil) {
-        data[@"pictureurl"] = profile.pictureURL;
+        profileData[@"pictureurl"] = profile.pictureURL;
     }
     
     if(profile.statusMessage != nil) {
-        data[@"statusmessage"] = profile.statusMessage;
+        profileData[@"statusmessage"] = profile.statusMessage;
     }
     
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"dd-MM-yyyy HH:mm"];
+
+    NSMutableDictionary *openIDData = [@{
+                                         @"issuer" : credential.IDToken.issuer,
+                                         @"subject" : credential.IDToken.subject,
+                                         @"audience" : credential.IDToken.audience,
+                                         @"expiration" : [formatter stringFromDate:credential.IDToken.expiration],
+                                         @"issueAt" : [formatter stringFromDate:credential.IDToken.issueAt],
+                                         @"name" : credential.IDToken.name,
+                                         @"pictureUrl" : credential.IDToken.pictureURL.absoluteString
+                                         }mutableCopy];
+    
+    
     // Pass the user information into the next view controller so that we can display it.
-    userInfoVC.userData = data;
+    userInfoVC.profileData = profileData;
+    userInfoVC.openIDData = openIDData;
     
     [self presentViewController:userInfoVC animated:YES completion:nil];
 }

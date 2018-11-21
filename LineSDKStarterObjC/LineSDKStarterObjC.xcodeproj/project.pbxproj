@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07A7A54B7D0A69BA4E3EC370 /* libPods-LineSDKStarterObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE8A6DF20BA067DC9E51CCF /* libPods-LineSDKStarterObjC.a */; };
 		4408AC351DFE8C9F00741681 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4408AC341DFE8C9F00741681 /* ProfileViewController.m */; };
 		444D00041DFFCD9E00A8EFD7 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444D00021DFFCD9E00A8EFD7 /* UserInfoViewController.m */; };
 		44914CFF1DF94F8D008A3FBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44914CFE1DF94F8D008A3FBA /* main.m */; };
@@ -17,17 +18,18 @@
 		44914D0D1DF94F8D008A3FBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44914D0B1DF94F8D008A3FBA /* LaunchScreen.storyboard */; };
 		44914D181DF9516F008A3FBA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44914D171DF9516F008A3FBA /* Security.framework */; };
 		44914D1A1DF95175008A3FBA /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44914D191DF95175008A3FBA /* CoreTelephony.framework */; };
-		6053A47B9B95DA237A0C397B /* libPods-LineSDKStarterObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 870C9701EACDCD8182B83EA6 /* libPods-LineSDKStarterObjC.a */; };
+		44D831AE21870160007D6383 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D831AD21870160007D6383 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1FD7593DC74597729C86D31B /* Pods-LineSDKStarterObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineSDKStarterObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC.release.xcconfig"; sourceTree = "<group>"; };
+		2DE8A6DF20BA067DC9E51CCF /* libPods-LineSDKStarterObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineSDKStarterObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4408AC331DFE8C9F00741681 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		4408AC341DFE8C9F00741681 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		44206EAA1E07BF03009B942D /* LineSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LineSDK.framework; path = LINE_iOS_SDK_V2_Starter/Frameworks/LineSDK.framework; sourceTree = "<group>"; };
 		444D00021DFFCD9E00A8EFD7 /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		444D00031DFFCD9E00A8EFD7 /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		444D00051DFFE22500A8EFD7 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		445FF6FA2182E7590072BF9D /* DisplayInfoType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayInfoType.h; sourceTree = "<group>"; };
 		44914CFA1DF94F8D008A3FBA /* LineSDKStarterObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LineSDKStarterObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44914CFE1DF94F8D008A3FBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44914D001DF94F8D008A3FBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +42,9 @@
 		44914D0E1DF94F8D008A3FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44914D171DF9516F008A3FBA /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		44914D191DF95175008A3FBA /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		7466B7B937D67AFFE1A41274 /* Pods-LineSDKStarterObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineSDKStarterObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC.debug.xcconfig"; sourceTree = "<group>"; };
-		870C9701EACDCD8182B83EA6 /* libPods-LineSDKStarterObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LineSDKStarterObjC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44D831AD21870160007D6383 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8C7321976CEB150530ACA060 /* Pods-LineSDKStarterObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineSDKStarterObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		DF14F4A2202F41C9C98DA769 /* Pods-LineSDKStarterObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineSDKStarterObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +54,7 @@
 			files = (
 				44914D1A1DF95175008A3FBA /* CoreTelephony.framework in Frameworks */,
 				44914D181DF9516F008A3FBA /* Security.framework in Frameworks */,
-				6053A47B9B95DA237A0C397B /* libPods-LineSDKStarterObjC.a in Frameworks */,
+				07A7A54B7D0A69BA4E3EC370 /* libPods-LineSDKStarterObjC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,10 +64,11 @@
 		44914CF11DF94F8D008A3FBA = {
 			isa = PBXGroup;
 			children = (
+				44D831AD21870160007D6383 /* Default-568h@2x.png */,
 				44914CFC1DF94F8D008A3FBA /* LineSDKStarterObjC */,
 				44914CFB1DF94F8D008A3FBA /* Products */,
 				44914D141DF95168008A3FBA /* Frameworks */,
-				B05C5D66B6C29D6FF3B99239 /* Pods */,
+				B59F30A7BA293E4E6F05A6FF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +96,7 @@
 				44914CFD1DF94F8D008A3FBA /* Supporting Files */,
 				4408AC331DFE8C9F00741681 /* ProfileViewController.h */,
 				4408AC341DFE8C9F00741681 /* ProfileViewController.m */,
+				445FF6FA2182E7590072BF9D /* DisplayInfoType.h */,
 			);
 			path = LineSDKStarterObjC;
 			sourceTree = "<group>";
@@ -111,16 +116,16 @@
 				444D00051DFFE22500A8EFD7 /* SafariServices.framework */,
 				44914D191DF95175008A3FBA /* CoreTelephony.framework */,
 				44914D171DF9516F008A3FBA /* Security.framework */,
-				870C9701EACDCD8182B83EA6 /* libPods-LineSDKStarterObjC.a */,
+				2DE8A6DF20BA067DC9E51CCF /* libPods-LineSDKStarterObjC.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B05C5D66B6C29D6FF3B99239 /* Pods */ = {
+		B59F30A7BA293E4E6F05A6FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7466B7B937D67AFFE1A41274 /* Pods-LineSDKStarterObjC.debug.xcconfig */,
-				1FD7593DC74597729C86D31B /* Pods-LineSDKStarterObjC.release.xcconfig */,
+				8C7321976CEB150530ACA060 /* Pods-LineSDKStarterObjC.debug.xcconfig */,
+				DF14F4A2202F41C9C98DA769 /* Pods-LineSDKStarterObjC.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -132,12 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44914D111DF94F8D008A3FBA /* Build configuration list for PBXNativeTarget "LineSDKStarterObjC" */;
 			buildPhases = (
-				D050CC6881957407BD9A2BB5 /* [CP] Check Pods Manifest.lock */,
+				40B5D4BB88EC7CF63D76BB67 /* [CP] Check Pods Manifest.lock */,
 				44914CF61DF94F8D008A3FBA /* Sources */,
 				44914CF71DF94F8D008A3FBA /* Frameworks */,
 				44914CF81DF94F8D008A3FBA /* Resources */,
-				01C593937BC1CA62B2752066 /* [CP] Embed Pods Frameworks */,
-				B1DD260ED6C1DE1FA4EF98F7 /* [CP] Copy Pods Resources */,
+				E0EF734E90DFD2CE2C91D837 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,12 +158,12 @@
 		44914CF21DF94F8D008A3FBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = LINE;
 				TargetAttributes = {
 					44914CF91DF94F8D008A3FBA = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = Y59PKQ5873;
+						DevelopmentTeam = 9589S6PQ44;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -193,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44914D0D1DF94F8D008A3FBA /* LaunchScreen.storyboard in Resources */,
+				44D831AE21870160007D6383 /* Default-568h@2x.png in Resources */,
 				44914D0A1DF94F8D008A3FBA /* Assets.xcassets in Resources */,
 				44914D081DF94F8D008A3FBA /* Main.storyboard in Resources */,
 			);
@@ -201,49 +206,48 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01C593937BC1CA62B2752066 /* [CP] Embed Pods Frameworks */ = {
+		40B5D4BB88EC7CF63D76BB67 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LineSDKStarterObjC-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B1DD260ED6C1DE1FA4EF98F7 /* [CP] Copy Pods Resources */ = {
+		E0EF734E90DFD2CE2C91D837 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/LineSDK/Resource.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Resource.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LineSDKStarterObjC/Pods-LineSDKStarterObjC-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D050CC6881957407BD9A2BB5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -296,6 +300,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -303,6 +308,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -351,6 +357,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -358,6 +365,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -389,34 +397,34 @@
 		};
 		44914D121DF94F8D008A3FBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7466B7B937D67AFFE1A41274 /* Pods-LineSDKStarterObjC.debug.xcconfig */;
+			baseConfigurationReference = 8C7321976CEB150530ACA060 /* Pods-LineSDKStarterObjC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y59PKQ5873;
+				DEVELOPMENT_TEAM = 9589S6PQ44;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/LineSDKStarterObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "line.line-sdk-starter-objc-v2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linecorp.linesdk.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		44914D131DF94F8D008A3FBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD7593DC74597729C86D31B /* Pods-LineSDKStarterObjC.release.xcconfig */;
+			baseConfigurationReference = DF14F4A2202F41C9C98DA769 /* Pods-LineSDKStarterObjC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = Y59PKQ5873;
+				DEVELOPMENT_TEAM = 9589S6PQ44;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/LineSDKStarterObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "line.line-sdk-starter-objc-v2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.linecorp.linesdk.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

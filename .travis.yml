@@ -1,7 +1,6 @@
 language: objective-c
 env:
     - PROJECTNAME=LineSDKStarterObjC
-    - PROJECTNAME=LineSDKStarterSwift
 rvm:
     - 2.2.5
 before_install:
@@ -9,9 +8,6 @@ before_install:
     - cd LineSDKStarterObjC
     - pod update
     - cd ..
-    - cd LineSDKStarterSwift
-    - pod update
-    - cd ..
-osx_image: xcode9.2
+osx_image: xcode10
 script: "xcodebuild -workspace $PROJECTNAME/$PROJECTNAME.xcworkspace -scheme $PROJECTNAME -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO"
 podfile: $PROJECTNAME/Podfile

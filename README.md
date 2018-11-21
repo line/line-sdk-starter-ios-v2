@@ -1,11 +1,9 @@
-![](https://travis-ci.org/line/line-sdk-starter-ios-v2.svg?branch=master)
-
-# line-ios-v2-starter
-LINE iOS SDK V2 starter
+# line-ios-objc-v5-starter
+LINE iOS SDK V5 Objective-C starter
 
 # Introduction
 
-This is a sample application for LINE iOS SDK V2. It demonstrates the following functionality:
+This is a sample application for LINE iOS SDK V5 that is written in Objective-C. It demonstrates the following functionality:
 
 * App-to-app Login
 * Web Login
@@ -14,17 +12,15 @@ This is a sample application for LINE iOS SDK V2. It demonstrates the following 
 * Refresh Token API
 * Logout API
 
-It includes a sample in Objective-C and a sample in Swift.
-
 # Before Starting
 
 * You must have Xcode installed.
 * You must have [Cocoapods](https://cocoapods.org/) installed.
-* You must create a LINE Login account on the [LINE Business Center](https://business.line.me) that has the application type set to `NATIVE_APP`. You will need the account's Channel ID to set up the SDK.
+* You must create a LINE Login account on the [LINE Developer Console](/en/docs/ios-sdk/objective-c/link-a-bot/#use-social-api) that has the application type set to `NATIVE_APP`. You will need the account's Channel ID to set up the SDK.
 
 # Setup
 
-1. Run `pod install` from the `LineSDKStarterObjC` folder if you want to use the Objective-C sample or from the `LineSDKStarterSwift` folder if you want to use the Swift sample.
+1. Run `pod install` from the `LineSDKStarterObjC` folder.
 2. Set the iOS bundle ID and iOS scheme in the technical configuration section of the Channel Console.
 3. Set the LineSDKConfig/ChannelID element in the project's `Info.plist` to your channel's Channel ID and then build the application using Xcode.
 
@@ -41,11 +37,13 @@ After logging in, the user's profile information and access token will be displa
 This information should be the same as the profile information that is initially displayed to the user after they log into this starter application.
 * **Verify Token** - Pushing this button will call the LINE SDK's `verifyTokenWithCompletion` method. An alert pop-up will display informing the user if their token is valid or not.
 * **Refresh Token** - Pushing this button will call the LINE SDK's `refreshTokenWithCompletion` method. This will update the access token that is displayed on the starter app's main screen.
+* **Check Friendship** - Pushing this button will call the [Friendship Status API](https://developers.line.me/en/docs/ios-sdk/objective-c/link-a-bot/#use-social-api). For this API to work properly, you must first [link a bot to your channel.](https://developers.line.me/en/docs/ios-sdk/objective-c/link-a-bot/#spy-displaying-the-option-to-add-your-bot-as-friend)
+* **Open ID** - Pushing this button will display the information that is contained in the [Open ID Token](https://developers.line.me/en/docs/ios-sdk/objective-c/managing-users/#spy-using-id-tokens-to-identify-users).
 * **Logout** - Pushing this button will call the LINE SDK's `logoutWithCompletion` method. This will revoke the access token and return the user to the "Select Login" page.
 
 # Documentation
 
 For detailed documentation, please refer to the following links:
 
-* [iOS SDK documentation](https://developers.line.me/ios/overview)
-* [LINE SDK for iOS API reference](https://devdocs.line.me/en/#line-sdk-for-ios-api-reference)
+* [iOS SDK documentation](https://developers.line.me/en/docs/ios-sdk/objective-c/overview/)
+* [LINE SDK for iOS API reference](https://developers.line.me/en/reference/ios-sdk-objc/)

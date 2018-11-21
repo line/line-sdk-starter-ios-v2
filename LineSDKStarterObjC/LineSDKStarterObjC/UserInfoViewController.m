@@ -27,16 +27,15 @@
     // Initialize the API Client so that we can use the LINE SDK's API
     self.apiClient = [[LineSDKAPI alloc] initWithConfiguration:[LineSDKConfiguration defaultConfig]];
     
+    self.userIdLabel.text = self.profileData[@"userid"];
+    self.statusMessageLabel.text = self.profileData[@"statusmessage"];
+    self.accessTokenLabel.text = self.profileData[@"accesstoken"];
+    self.displayNameLabel.text = self.profileData[@"displayname"];
     
-    self.userIdLabel.text = self.userData[@"userid"];
-    self.statusMessageLabel.text = self.userData[@"statusmessage"];
-    self.accessTokenLabel.text = self.userData[@"accesstoken"];
-    self.displayNameLabel.text = self.userData[@"displayname"];
-    
-    if (self.userData[@"pictureurl"] != nil ){
+    if (self.profileData[@"pictureurl"] != nil ){
         NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
         
-        [[session dataTaskWithURL:self.userData[@"pictureurl"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        [[session dataTaskWithURL:self.profileData[@"pictureurl"] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.profileImageView.image = [UIImage imageWithData:data];
             });
@@ -62,8 +61,14 @@
         
         ProfileViewController * profileVC = [self.storyboard instantiateViewControllerWithIdentifier:@"profileViewController"];
         
-        // Pass the profile information to the next view controller
-        profileVC.userProfile = profile;
+        profileVC.displayInfo =  @{
+                                   @"type": [NSNumber numberWithInt:DisplayInfoTypeProfile],
+                                   @"userId": profile.userID ? profile.userID : @"",
+                                   @"statusMessage": profile.statusMessage ? profile.statusMessage : @"",
+                                   @"displayName": profile.displayName ? profile.displayName : @"",
+                                   @"pictureUrl": profile.pictureURL.absoluteString ? profile.pictureURL.absoluteString : @""
+                                   };
+        
         [self presentViewController:profileVC animated:YES completion:nil];
     }];
 }
@@ -136,6 +141,57 @@
     
     [alertController addAction:ok];
     [self presentViewController:alertController animated:YES completion:nil];
+}
+- (IBAction)pressCheckFriendship:(id)sender {
+
+    [self.apiClient getBotFriendshipStatusWithCompletion:^(LineSDKBotFriendshipStatusResult * _Nullable result, NSError * _Nullable error) {
+        
+        NSString * message;
+        NSString * title;
+        
+        if (error){
+            
+            if ([error.domain isEqualToString:LineSDKServerErrorDomain] && error.code == 400) {
+                title = @"Friendship API Error";
+                message = @"Error calling the Friendship API. Perhaps you don't have a bot linked to your channel?";
+            } else {
+                title = @"Friendship API Error";
+                message = @"Error calling the Friendship API.";
+            }
+            NSLog(@"Error calling friendship API: %@", error.description);
+        } else {
+            title = @"Friendship API";
+            if (result.friendFlag){
+                message = @"Friendship status has changed.";
+            } else {
+                message = @"Friendship status has not changed.";
+            }
+        }
+        
+        [self displayAlertDialogWithTitle:title AndMessage:message Dismiss:NO];
+        
+    }];
+}
+
+- (IBAction)pressOpenID:(id)sender {
+    
+
+    ProfileViewController * openIDVC = [self.storyboard instantiateViewControllerWithIdentifier:@"profileViewController"];
+    
+    
+    openIDVC.displayInfo =  @{
+                               @"type": [NSNumber numberWithInt:DisplayInfoTypeOpenID],
+                               @"issuer": self.openIDData[@"issuer"] ? self.openIDData[@"issuer"] : @"",
+                               @"subject": self.openIDData[@"subject"] ? self.openIDData[@"subject"] : @"",
+                               @"audience": self.openIDData[@"audience"] ? self.openIDData[@"audience"] : @"",
+                               @"expiration": self.openIDData[@"expiration"] ? self.openIDData[@"expiration"] : @"",
+                               @"issueAt": self.openIDData[@"issueAt"] ? self.openIDData[@"issueAt"] : @"",
+                               @"name": self.openIDData[@"name"] ? self.openIDData[@"name"] : @"",
+                               @"pictureUrl": self.openIDData[@"pictureUrl"] ? self.openIDData[@"pictureUrl"] : @"",
+                               };
+    
+    [self presentViewController:openIDVC animated:YES completion:nil];
+    
 }
 
 @end
