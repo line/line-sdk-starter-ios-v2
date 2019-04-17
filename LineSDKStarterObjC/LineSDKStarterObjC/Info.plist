@@ -32,7 +32,6 @@
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>lineauth2</string>
-		<string>line3rdp.$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
